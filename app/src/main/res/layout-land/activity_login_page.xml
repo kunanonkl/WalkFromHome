@@ -7,24 +7,19 @@
 
     <ImageView
         android:id="@+id/second_page_ellipse_2"
-        android:layout_width="524dp"
-        android:layout_height="207dp"
-        android:layout_marginEnd="56dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/second_page_ellipse_3"
         tools:srcCompat="@drawable/second_page_ellipse_3" />
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="717dp"
-        android:layout_height="431dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.719"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/second_page_ellipse_1" />
 
     <ImageView
@@ -33,10 +28,10 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintHorizontal_bias="0.088"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.355"
+        app:layout_constraintVertical_bias="0.31"
         app:srcCompat="@drawable/second_apge_app_name"
         tools:srcCompat="@drawable/second_apge_app_name" />
 
@@ -45,7 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="30dp"
         app:layout_constraintBottom_toBottomOf="@+id/second_page_app_name"
         app:layout_constraintStart_toStartOf="@+id/second_page_app_name"
         app:srcCompat="@drawable/second_page_logo"
@@ -75,7 +70,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/second_page_app_name"
-        app:layout_constraintVertical_bias="0.16000003"
+        app:layout_constraintVertical_bias="0.100000024"
         app:strokeColor="#ACC4D6"
         app:strokeWidth="2dp"
         tools:ignore="TextContrastCheck" />
