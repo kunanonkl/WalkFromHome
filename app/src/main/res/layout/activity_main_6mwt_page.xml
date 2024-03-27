@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="เวลาที่เหลือ :"
+        android:textAlignment="center"
+        android:textColor="#5B1CA8"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.138" />
+
+    <ImageView
+        android:id="@+id/danger_logo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032"
+        app:srcCompat="@drawable/third_page_logo"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@drawable/third_page_logo" />
+
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/poppins"
+        android:text="00:00"
+        android:textColor="#FF0000"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.37" />
+
+    <Button
+        android:id="@+id/button_start_pause"
+        android:layout_width="145dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/text_view_countdown"
+        android:layout_alignParentStart="true"
+        android:fontFamily="@font/poppins"
+        android:text="start"
+        android:textColor="#090909"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.674"
+        app:strokeColor="#0E0E0E"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="145dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/button_start_pause"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/poppins"
+        android:text="reset"
+        android:textColor="#090909"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_start_pause"
+        app:layout_constraintVertical_bias="0.0"
+        app:strokeColor="#0E0E0E"
+        app:strokeWidth="2dp"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/finish_walking_test"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/poppins"
+        android:text="สิ้นสุดการทดสอบ"
+        android:textColor="#FF0000"
+        android:textColorHint="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.922" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login_data_page"
+    android:background="@android:color/white">
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:backgroundTint="#908EF8"
+        android:isScrollContainer="false"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/third_page_back_button"
+        app:iconPadding="8dp"
+        app:iconSize="29dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/login_data_page_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.703"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032"
+        app:srcCompat="@drawable/third_page_logo"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@drawable/third_page_logo" />
+
+    <ImageView
+        android:id="@+id/login_data_page_login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28"
+        app:srcCompat="@drawable/third_page_login"
+        tools:srcCompat="@drawable/third_page_login" />
+
+    <ImageView
+        android:id="@+id/login_data_page_username_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.414"
+        app:srcCompat="@drawable/third_page_username" />
+
+    <EditText
+        android:id="@+id/login_data_page_text_username"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:background="@drawable/round_edit_text"
+        android:drawableLeft="@drawable/third_page_user_pic"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="   USERNAME"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textDirection="firstStrongRtl"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toEndOf="@+id/login_data_page_username_text"
+        app:layout_constraintTop_toBottomOf="@+id/login_data_page_login_text"
+        app:layout_constraintVertical_bias="0.079"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/login_data_page_password_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_data_page_username_text"
+        app:layout_constraintVertical_bias="0.1"
+        app:srcCompat="@drawable/third_page_password" />
+
+    <EditText
+        android:id="@+id/login_data_page_password"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:background="@drawable/round_edit_text"
+        android:drawableLeft="@drawable/third_page_password_pic"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="   PASSWORD"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toEndOf="@+id/login_data_page_password_text"
+        app:layout_constraintTop_toBottomOf="@+id/login_data_page_text_username"
+        app:layout_constraintVertical_bias="0.069"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/login2_button"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="382dp"
+        android:backgroundTint="#87CA8E"
+        android:text="เข้าสู่ระบบ"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.138"
+        app:strokeColor="#ACC4D6"
+        app:strokeWidth="1dp" />
+
+    <TextView
+        android:id="@+id/register_click"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:text="ลงทะเบียนเพื่อเข้าใช้งาน คลิกที่นี่"
+        android:textAlignment="center"
+        android:textColor="#7A55E3"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login2_button"
+        app:layout_constraintVertical_bias="0.363" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="416dp"
+        android:layout_height="102dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/third_page_ellipse_1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

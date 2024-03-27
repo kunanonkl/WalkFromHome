@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.walkfromhome">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/walkfromhome_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WalkFromHome"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".show_test_result_guest"
+            android:exported="false" />
+        <activity
+            android:name=".final_page_general_user"
+            android:exported="false" />
+        <activity
+            android:name=".distance_show"
+            android:exported="false" />
+        <activity
+            android:name=".good_page"
+            android:exported="false" />
+        <activity
+            android:name=".danger_page"
+            android:exported="false" />
+        <activity
+            android:name=".final_page_app"
+            android:exported="false" />
+        <activity
+            android:name=".show_test_result_page"
+            android:exported="false" />
+        <activity
+            android:name=".comment_to_user_page_guest"
+            android:exported="false" />
+        <activity
+            android:name=".main_6mwt_page"
+            android:exported="false" />
+        <activity
+            android:name=".insert_data_page"
+            android:exported="false" />
+        <activity
+            android:name=".tried_form"
+            android:exported="true" />
+        <activity
+            android:name=".data_before_test_page"
+            android:exported="true" />
+        <activity
+            android:name=".how_to_do_6mwt_page"
+            android:exported="true" />
+        <activity
+            android:name=".test_data_page"
+            android:exported="true" />
+        <activity
+            android:name=".profile_page"
+            android:exported="true" />
+        <activity
+            android:name=".register_page_general_person"
+            android:exported="true" />
+        <activity
+            android:name=".login_data_page"
+            android:exported="true" />
+        <activity
+            android:name=".login_page"
+            android:exported="true" />
+        <activity
+            android:name=".form_walking_data"
+            android:exported="true" />
+        <activity
+            android:name=".calibrate_stride"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

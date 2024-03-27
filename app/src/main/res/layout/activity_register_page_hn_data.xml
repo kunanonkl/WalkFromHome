@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register_page_hn_data"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/register_hn_page_logo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.703"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032"
+        app:srcCompat="@drawable/third_page_logo"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@drawable/third_page_logo" />
+
+    <ImageView
+        android:id="@+id/register_hn_page_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112"
+        app:srcCompat="@drawable/fourth_page_register" />
+
+    <EditText
+        android:id="@+id/hn_name"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:background="@drawable/plaintext_registerpage"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="  ระบุชื่อผู้ป่วย"
+        android:inputType="textPersonName"
+        android:textColorHint="#241212"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.279"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/hn_passport"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:background="@drawable/plaintext_registerpage"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="  ระบุหมายเลขบัตรประชาชน"
+        android:inputType="textPersonName"
+        android:textColorHint="#241212"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.371"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/hn_date"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:background="@drawable/plaintext_registerpage"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="  DD/MM/YY"
+        android:inputType="textPersonName"
+        android:textColorHint="#241212"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.568"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        app:srcCompat="@drawable/fourth_page_date" />
+
+    <Button
+        android:id="@+id/back_2_button"
+        android:layout_width="150dp"
+        android:layout_height="49dp"
+        android:backgroundTint="#ffff"
+        android:fontFamily="@font/poppins"
+        android:text="ย้อนกลับ"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textColorHighlight="#131313"
+        android:textColorHint="#292626"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.706"
+        app:strokeColor="#908EF8"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="150dp"
+        android:layout_height="49dp"
+        android:backgroundTint="#FFFF"
+        android:fontFamily="@font/poppins"
+        android:text="ต่อไป"
+        android:textColor="#151414"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.865"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.706"
+        app:strokeColor="#908EF8"
+        app:strokeWidth="2dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/fourth_page_ellipse_1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Desktop/new-project/app/src/main/res/drawable/circlebg.xml" value="0.29296875" />
+        <entry key="..\:/Desktop/new-project/app/src/main/res/drawable/insert_data_box.xml" value="0.14296875" />
+        <entry key="..\:/Desktop/new-project/app/src/main/res/layout/activity_comment_to_user_page.xml" value="0.11354166666666667" />
+        <entry key="..\:/Desktop/new-project/app/src/main/res/layout/activity_data_before_test_page.xml" value="0.2" />
+        <entry key="..\:/Desktop/new-project/app/src/main/res/layout/activity_how_to_do_6mwt_page.xml" value="0.2" />
+        <entry key="..\:/Desktop/new-project/app/src/main/res/layout/activity_insert_data_page.xml" value="0.2" />
+        <entry key="..\:/Desktop/new-project/app/src/main/res/layout/activity_login_data_page.xml" value="0.176" />
+        <entry key="..\:/Desktop/new-project/app/src/main/res/layout/activity_login_page.xml" value="0.176" />
+        <entry key="..\:/Desktop/new-project/app/src/main/res/layout/activity_main.xml" value="0.12" />
+        <entry key="..\:/Desktop/new-project/app/src/main/res/layout/activity_register_page_general_person.xml" value="0.2" />
+        <entry key="..\:/Desktop/new-project/app/src/main/res/layout/custompopup.xml" value="0.4" />
+        <entry key="..\:/Users/JSUT/Downloads/6mwt-main/app/src/main/res/layout-large/activity_calibrate_stride.xml" value="0.13524590163934427" />
+        <entry key="..\:/Users/JSUT/Downloads/6mwt-main/app/src/main/res/layout-normal/activity_calibrate_stride.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/JSUT/Downloads/6mwt-main/app/src/main/res/layout-small/activity_calibrate_stride.xml" value="0.6513157894736842" />
+        <entry key="..\:/Users/PooMz/Desktop/master/app/src/main/res/drawable/insert_data_box.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/PooMz/Desktop/master/app/src/main/res/drawable/plaintext_registerpage.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/PooMz/Desktop/master/app/src/main/res/layout/activity_data_before_test_page.xml" value="0.536" />
+        <entry key="..\:/Users/PooMz/Desktop/master/app/src/main/res/layout/activity_how_to_do_6mwt_page.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/PooMz/Desktop/master/app/src/main/res/layout/activity_insert_data_page.xml" value="0.264" />
+        <entry key="..\:/Users/PooMz/Desktop/master/app/src/main/res/layout/activity_login_data_page.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/PooMz/Desktop/master/app/src/main/res/layout/activity_login_page.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/PooMz/Desktop/master/app/src/main/res/layout/activity_main_6mwt_page.xml" value="0.264" />
+        <entry key="..\:/Users/PooMz/Desktop/master/app/src/main/res/layout/activity_profile_page.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/PooMz/Desktop/master/app/src/main/res/layout/activity_register_page_general_person.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/PooMz/Desktop/master/app/src/main/res/layout/activity_register_page_hn_data.xml" value="0.4" />
+        <entry key="..\:/Users/PooMz/Desktop/new-project/app/src/main/res/layout/activity_comment_to_user_page.xml" value="0.18" />
+        <entry key="..\:/Users/PooMz/Desktop/new-project/app/src/main/res/layout/activity_data_before_test_page.xml" value="0.11548913043478261" />
+        <entry key="..\:/Users/PooMz/Desktop/new-project/app/src/main/res/layout/activity_final_page.xml" value="0.14" />
+        <entry key="..\:/Users/PooMz/Desktop/new-project/app/src/main/res/layout/activity_login_page.xml" value="0.15" />
+        <entry key="..\:/Users/PooMz/Desktop/new-project/app/src/main/res/layout/activity_main_6mwt_page.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/PooMz/Desktop/new-project/app/src/main/res/layout/activity_show_test_result_page.xml" value="0.25" />
+        <entry key="..\:/Users/spoom/Desktop/backup_ject_poom/WalkFromHome/app/src/main/res/layout-large/activity_login_page.xml" value="0.190625" />
+        <entry key="..\:/Users/spoom/Desktop/backup_ject_poom/WalkFromHome/app/src/main/res/layout-normal/activity_login_page.xml" value="0.10701754385964912" />
+        <entry key="..\:/Users/spoom/Desktop/backup_ject_poom/WalkFromHome/app/src/main/res/layout-small/activity_login_page.xml" value="0.8714285714285714" />
+        <entry key="..\:/Users/spoom/Desktop/backup_ject_poom/WalkFromHome/app/src/main/res/layout-xlarge/activity_login_page.xml" value="0.1" />
+        <entry key="..\:/Users/spoom/Desktop/backup_ject_poom/WalkFromHome/app/src/main/res/layout/activity_comment_to_user_page.xml" value="0.16171875" />
+        <entry key="..\:/Users/spoom/Desktop/backup_ject_poom/WalkFromHome/app/src/main/res/layout/activity_danger_page.xml" value="0.16171875" />
+        <entry key="..\:/Users/spoom/Desktop/backup_ject_poom/WalkFromHome/app/src/main/res/layout/activity_data_before_test_page.xml" value="0.3078125" />
+        <entry key="..\:/Users/spoom/Desktop/backup_ject_poom/WalkFromHome/app/src/main/res/layout/activity_final_page_app.xml" value="0.16171875" />
+        <entry key="..\:/Users/spoom/Desktop/backup_ject_poom/WalkFromHome/app/src/main/res/layout/activity_good_page.xml" value="0.17421875" />
+        <entry key="..\:/Users/spoom/Desktop/backup_ject_poom/WalkFromHome/app/src/main/res/layout/activity_how_to_do_6mwt_page.xml" value="0.16171875" />
+        <entry key="..\:/Users/spoom/Desktop/backup_ject_poom/WalkFromHome/app/src/main/res/layout/activity_insert_data_page.xml" value="0.190625" />
+        <entry key="..\:/Users/spoom/Desktop/backup_ject_poom/WalkFromHome/app/src/main/res/layout/activity_login_page.xml" value="0.16171875" />
+        <entry key="..\:/Users/spoom/Desktop/backup_ject_poom/WalkFromHome/app/src/main/res/layout/activity_main.xml" value="0.16171875" />
+        <entry key="..\:/Users/spoom/Desktop/backup_ject_poom/WalkFromHome/app/src/main/res/layout/activity_main_6mwt_page.xml" value="0.16171875" />
+        <entry key="..\:/Users/spoom/Desktop/backup_ject_poom/WalkFromHome/app/src/main/res/layout/activity_profile_page.xml" value="0.31328125" />
+        <entry key="..\:/Users/spoom/Desktop/backup_ject_poom/WalkFromHome/app/src/main/res/layout/activity_register_page_general_person.xml" value="0.2" />
+        <entry key="..\:/Users/spoom/Desktop/backup_ject_poom/WalkFromHome/app/src/main/res/layout/activity_register_page_hn_data.xml" value="0.16171875" />
+        <entry key="..\:/Users/spoom/Desktop/backup_ject_poom/WalkFromHome/app/src/main/res/layout/activity_show_test_result_page.xml" value="0.3078125" />
+        <entry key="..\:/Users/spoom/Desktop/backup_ject_poom/WalkFromHome/app/src/main/res/layout/activity_test_data_page.xml" value="0.16171875" />
+        <entry key="..\:/Users/spoom/Desktop/backup_ject_poom/WalkFromHome/app/src/main/res/layout/activity_tried_form.xml" value="0.16171875" />
+        <entry key="..\:/Users/spoom/Desktop/backup_ject_poom/WalkFromHome/app/src/main/res/layout/custompopup.xml" value="0.16171875" />
+        <entry key="..\:/Users/spoom/Desktop/backup_ject_poom/backup_walkfromhome/app/src/main/res/layout/activity_insert_data_page.xml" value="0.26328125" />
+        <entry key="..\:/Users/spoom/Desktop/backup_ject_poom/backup_walkfromhome/app/src/main/res/layout/activity_main_6mwt_page.xml" value="0.26328125" />
+        <entry key="..\:/Users/spoom/Desktop/backup_ject_poom/backup_walkfromhome/app/src/main/res/layout/activity_profile_page.xml" value="0.26328125" />
+        <entry key="..\:/Users/spoom/Desktop/backup_ject_poom/backup_walkfromhome/app/src/main/res/layout/custompopup.xml" value="0.375" />
+        <entry key="..\:/Users/spoom/Desktop/backup_walkfromhome/app/src/main/res/drawable/circlebg.xml" value="0.1" />
+        <entry key="..\:/Users/spoom/Desktop/backup_walkfromhome/app/src/main/res/drawable/insert_data_box.xml" value="0.1" />
+        <entry key="..\:/Users/spoom/Desktop/backup_walkfromhome/app/src/main/res/drawable/plaintext_registerpage.xml" value="0.1" />
+        <entry key="..\:/Users/spoom/Desktop/backup_walkfromhome/app/src/main/res/drawable/round_edit_text.xml" value="0.1" />
+        <entry key="..\:/Users/spoom/Desktop/backup_walkfromhome/app/src/main/res/layout/activity_comment_to_user_page.xml" value="0.14780701754385964" />
+        <entry key="..\:/Users/spoom/Desktop/backup_walkfromhome/app/src/main/res/layout/activity_danger_page.xml" value="0.14780701754385964" />
+        <entry key="..\:/Users/spoom/Desktop/backup_walkfromhome/app/src/main/res/layout/activity_data_before_test_page.xml" value="0.264" />
+        <entry key="..\:/Users/spoom/Desktop/backup_walkfromhome/app/src/main/res/layout/activity_distance_show.xml" value="0.14780701754385964" />
+        <entry key="..\:/Users/spoom/Desktop/backup_walkfromhome/app/src/main/res/layout/activity_good_page.xml" value="0.2" />
+        <entry key="..\:/Users/spoom/Desktop/backup_walkfromhome/app/src/main/res/layout/activity_insert_data_page.xml" value="0.264" />
+        <entry key="..\:/Users/spoom/Desktop/backup_walkfromhome/app/src/main/res/layout/activity_login_page.xml" value="0.14780701754385964" />
+        <entry key="..\:/Users/spoom/Desktop/backup_walkfromhome/app/src/main/res/layout/activity_main_6mwt_page.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/spoom/Desktop/backup_walkfromhome/app/src/main/res/layout/activity_show_test_result_page.xml" value="0.14780701754385964" />
+        <entry key="..\:/Users/spoom/Desktop/backup_walkfromhome/app/src/main/res/layout/activity_step_detector_app.xml" value="0.22" />
+        <entry key="..\:/Users/spoom/Desktop/backup_walkfromhome/app/src/main/res/layout/activity_test_data_page.xml" value="0.12" />
+        <entry key="..\:/Users/spoom/Desktop/backup_walkfromhome/app/src/main/res/layout/list_item.xml" value="0.14780701754385964" />
+        <entry key="..\:/Users/spoom/Desktop/backup_walkfromhome/app/src/main/res/layout/list_items.xml" value="0.14780701754385964" />
+        <entry key="..\:/Users/spoom/Desktop/backup_walkfromhome/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.16140350877192983" />
+        <entry key="..\:/Users/spoom/Desktop/backup_walkfromhome/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.16140350877192983" />
+        <entry key="..\:/Users/spoom/Desktop/update_git/update_project/app/src/main/res/layout-large/activity_login_page.xml" value="0.264" />
+        <entry key="..\:/Users/spoom/Desktop/update_git/update_project/app/src/main/res/layout-normal/activity_login_page.xml" value="0.1" />
+        <entry key="..\:/Users/spoom/Desktop/update_git/update_project/app/src/main/res/layout-small/activity_login_page.xml" value="0.1" />
+        <entry key="..\:/Users/spoom/Desktop/update_git/update_project/app/src/main/res/layout-xlarge/activity_login_page.xml" value="0.1" />
+        <entry key="..\:/Users/spoom/Desktop/update_git/update_project/app/src/main/res/layout/activity_danger_page.xml" value="0.2" />
+        <entry key="..\:/Users/spoom/Desktop/update_git/update_project/app/src/main/res/layout/activity_data_before_test_page.xml" value="0.176" />
+        <entry key="..\:/Users/spoom/Desktop/update_git/update_project/app/src/main/res/layout/activity_good_page.xml" value="0.152" />
+        <entry key="..\:/Users/spoom/Desktop/update_git/update_project/app/src/main/res/layout/activity_login_page.xml" value="0.103125" />
+        <entry key="..\:/Users/spoom/Downloads/backup_project-master/backup_project-master/app/src/main/res/layout/activity_how_to_do_6mwt_page.xml" value="0.1" />
+        <entry key="..\:/Users/spoom/Downloads/backup_project-master/backup_project-master/app/src/main/res/layout/activity_login_data_page.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/spoom/Downloads/for backup/for_senior_poomz-main/app/src/main/res/drawable/circle.xml" value="0.1" />
+        <entry key="..\:/Users/spoom/Downloads/for backup/for_senior_poomz-main/app/src/main/res/layout-large/activity_calibrate_stride.xml" value="0.131640625" />
+        <entry key="..\:/Users/spoom/Downloads/for backup/for_senior_poomz-main/app/src/main/res/layout-large/activity_login_page.xml" value="0.42125" />
+        <entry key="..\:/Users/spoom/Downloads/for backup/for_senior_poomz-main/app/src/main/res/layout-normal/activity_calibrate_stride.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/spoom/Downloads/for backup/for_senior_poomz-main/app/src/main/res/layout-normal/activity_login_page.xml" value="0.14780701754385964" />
+        <entry key="..\:/Users/spoom/Downloads/for backup/for_senior_poomz-main/app/src/main/res/layout-small/activity_calibrate_stride.xml" value="0.22" />
+        <entry key="..\:/Users/spoom/Downloads/for backup/for_senior_poomz-main/app/src/main/res/layout-small/activity_distance_show_calibrate.xml" value="0.14780701754385964" />
+        <entry key="..\:/Users/spoom/Downloads/for backup/for_senior_poomz-main/app/src/main/res/layout-small/activity_login_page.xml" value="0.7428571428571429" />
+        <entry key="..\:/Users/spoom/Downloads/for backup/for_senior_poomz-main/app/src/main/res/layout-xlarge/activity_login_page.xml" value="0.131640625" />
+        <entry key="..\:/Users/spoom/Downloads/for backup/for_senior_poomz-main/app/src/main/res/layout/activity_comment_to_user_page.xml" value="0.14780701754385964" />
+        <entry key="..\:/Users/spoom/Downloads/for backup/for_senior_poomz-main/app/src/main/res/layout/activity_distance_show.xml" value="0.14780701754385964" />
+        <entry key="..\:/Users/spoom/Downloads/for backup/for_senior_poomz-main/app/src/main/res/layout/activity_final_page_app.xml" value="0.1458874458874459" />
+        <entry key="..\:/Users/spoom/Downloads/for backup/for_senior_poomz-main/app/src/main/res/layout/activity_final_page_general_user.xml" value="0.14780701754385964" />
+        <entry key="..\:/Users/spoom/Downloads/for backup/for_senior_poomz-main/app/src/main/res/layout/activity_form_walking_data.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/spoom/Downloads/for backup/for_senior_poomz-main/app/src/main/res/layout/activity_insert_data_page.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/spoom/Downloads/for backup/for_senior_poomz-main/app/src/main/res/layout/activity_login_page.xml" value="0.14780701754385964" />
+        <entry key="..\:/Users/spoom/Downloads/for backup/for_senior_poomz-main/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/spoom/Downloads/for backup/for_senior_poomz-main/app/src/main/res/layout/activity_main_6mwt_page.xml" value="0.1" />
+        <entry key="..\:/Users/spoom/Downloads/for backup/for_senior_poomz-main/app/src/main/res/layout/activity_profile_page.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/spoom/Downloads/for backup/for_senior_poomz-main/app/src/main/res/layout/activity_register_page_hn_data.xml" value="0.22" />
+        <entry key="..\:/Users/spoom/Downloads/for backup/for_senior_poomz-main/app/src/main/res/layout/activity_show_test_result_guest.xml" value="0.13596491228070176" />
+        <entry key="..\:/Users/spoom/Downloads/for backup/for_senior_poomz-main/app/src/main/res/layout/activity_show_test_result_page.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/spoom/Downloads/for backup/for_senior_poomz-main/app/src/main/res/layout/activity_test_data_page.xml" value="0.22" />
+        <entry key="..\:/Users/spoom/Downloads/for backup/for_senior_poomz-main/app/src/main/res/layout/activity_tried_form.xml" value="0.14780701754385964" />
+        <entry key="..\:/Users/spoom/Downloads/for backup/for_senior_poomz-main/app/src/main/res/layout/custom_list_item.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/spoom/Downloads/for backup/for_senior_poomz-main/app/src/main/res/layout/list_item.xml" value="0.14780701754385964" />
+        <entry key="..\:/projectMarch/6mwt-main/app/src/main/res/layout-large/activity_calibrate_stride.xml" value="0.2" />
+        <entry key="..\:/projectMarch/6mwt-main/app/src/main/res/layout-normal/activity_calibrate_stride.xml" value="0.264" />
+        <entry key="..\:/projectMarch/6mwt-main/app/src/main/res/layout-small/activity_calibrate_stride.xml" value="0.6052631578947368" />
+        <entry key="..\:/projectMarch/6mwt-main/app/src/main/res/layout/activity_comment_to_user_page.xml" value="0.2" />
+        <entry key="..\:/projectMarch/6mwt-main/app/src/main/res/layout/activity_danger_page.xml" value="0.15307971014492755" />
+        <entry key="..\:/projectMarch/6mwt-main/app/src/main/res/layout/activity_data_before_test_page.xml" value="0.15307971014492755" />
+        <entry key="..\:/projectMarch/6mwt-main/app/src/main/res/layout/activity_distance_show.xml" value="0.16666666666666666" />
+        <entry key="..\:/projectMarch/6mwt-main/app/src/main/res/layout/activity_final_page_app.xml" value="0.15307971014492755" />
+        <entry key="..\:/projectMarch/6mwt-main/app/src/main/res/layout/activity_final_page_general_user.xml" value="0.15307971014492755" />
+        <entry key="..\:/projectMarch/6mwt-main/app/src/main/res/layout/activity_form_walking_data.xml" value="0.15307971014492755" />
+        <entry key="..\:/projectMarch/6mwt-main/app/src/main/res/layout/activity_good_page.xml" value="0.15307971014492755" />
+        <entry key="..\:/projectMarch/6mwt-main/app/src/main/res/layout/activity_how_to_do_6mwt_page.xml" value="0.4" />
+        <entry key="..\:/projectMarch/6mwt-main/app/src/main/res/layout/activity_login_data_page.xml" value="0.176" />
+        <entry key="..\:/projectMarch/6mwt-main/app/src/main/res/layout/activity_login_page.xml" value="0.15307971014492755" />
+        <entry key="..\:/projectMarch/6mwt-main/app/src/main/res/layout/activity_show_test_result_guest.xml" value="0.16666666666666666" />
+        <entry key="..\:/projectMarch/6mwt-main/app/src/main/res/layout/activity_show_test_result_page.xml" value="0.16666666666666666" />
+        <entry key="..\:/projectMarch/6mwt-main/app/src/main/res/layout/activity_test_data_page.xml" value="0.16666666666666666" />
+        <entry key="..\:/projectMarch/6mwt-main/app/src/main/res/layout/activity_tried_form.xml" value="0.13858695652173914" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.321025641025641" />
+        <entry key="app/src/main/res/drawable/input_bg.xml" value="0.321025641025641" />
+        <entry key="app/src/main/res/drawable/plaintext_registerpage.xml" value="0.14814814814814814" />
+        <entry key="app/src/main/res/drawable/round_edit_text.xml" value="0.14814814814814814" />
+        <entry key="app/src/main/res/layout/activity_data_before_test_page.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_how_to_do6_mwt_page.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_how_to_do_6mwt_page.xml" value="0.15070921985815602" />
+        <entry key="app/src/main/res/layout/activity_login_data_page.xml" value="0.2345650287646478" />
+        <entry key="app/src/main/res/layout/activity_login_page.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_profile_page.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_register_page_general_person.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_register_page_hn_data.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_test_data_page.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_tried_form.xml" value="0.45" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
