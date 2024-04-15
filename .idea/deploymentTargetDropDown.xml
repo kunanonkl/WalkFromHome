@@ -8,6 +8,15 @@
       <entry key="app">
         <State />
       </entry>
+      <entry key="final_page_app">
+        <State />
+      </entry>
+      <entry key="final_page_general_user">
+        <State />
+      </entry>
+      <entry key="register_page_general_person">
+        <State />
+      </entry>
     </value>
   </component>
 </project>

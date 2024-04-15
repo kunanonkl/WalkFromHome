@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "689630803594",
+    "firebase_url": "https://walkfromhome-8a54d-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "walkfromhome-8a54d",
+    "storage_bucket": "walkfromhome-8a54d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689630803594:android:99d63d7a41b58cd26f5f73",
+        "android_client_info": {
+          "package_name": "com.example.walkfromhome"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMfQWUOQxLOjsm9C-qyt_azYElyFlNWrc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

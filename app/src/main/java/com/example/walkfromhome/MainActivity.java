@@ -19,12 +19,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Write a message to the database
-        FirebaseDatabase database = FirebaseDatabase.getInstance("https://walkfromhome-8a54d-default-rtdb.asia-southeast1.firebasedatabase.app/");
-        DatabaseReference myRef = database.getReference("message");
-
-        myRef.setValue("Hello, World!");
-
         timer = new Timer();
         timer.schedule(new TimerTask() {
             @Override
