@@ -31,8 +31,8 @@ public class final_page_general_user extends AppCompatActivity {
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if(snapshot.exists()){
-                    maxId =(snapshot.getChildrenCount());
+                if (snapshot.exists()) {
+                    maxId = (snapshot.getChildrenCount());
                 }
             }
 
@@ -52,10 +52,14 @@ public class final_page_general_user extends AppCompatActivity {
                 dataUser.setWeight(GlobalVariable.weight);
                 dataUser.setHeight(GlobalVariable.height);
                 dataUser.setGender(GlobalVariable.gender);
+                dataUser.setStep(GlobalVariable.step);
+                dataUser.setWalking_distance(GlobalVariable.walking_distance);
+                dataUser.setWalking_information(GlobalVariable.walking_information);
+                dataUser.setStride_length(GlobalVariable.stride_length);
+                dataUser.setId(maxId + 1);
                 myRef.child(String.valueOf(maxId + 1)).setValue(dataUser);
 
-
-                Intent go_first_page = new Intent(getApplicationContext(),login_page.class);
+                Intent go_first_page = new Intent(getApplicationContext(), login_page.class);
                 startActivity(go_first_page);
                 finish();
             }
