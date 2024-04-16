@@ -1,6 +1,6 @@
 package com.example.walkfromhome;
 
-public class DataUser {
+public class TestResults {
     private String gender;
     private Integer step;
     private Double height;
