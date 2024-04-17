@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.VishnuSivadasVS:Advanced-HttpURLConnection:1.2@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e33f1b8d4b27f13b3a843c01b722c199/transformed/jetified-Advanced-HttpURLConnection-1.2/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e33f1b8d4b27f13b3a843c01b722c199/transformed/jetified-Advanced-HttpURLConnection-1.2/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/bdab620cf2019390ca09e343351e386b/transformed/jetified-Advanced-HttpURLConnection-1.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/bdab620cf2019390ca09e343351e386b/transformed/jetified-Advanced-HttpURLConnection-1.2/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
