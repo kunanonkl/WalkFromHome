@@ -8,9 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
 public class final_page_app extends AppCompatActivity {
     private Button show_data_but,return_but;
     private TextView logout_txt1;
