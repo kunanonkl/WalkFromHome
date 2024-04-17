@@ -1,11 +1,17 @@
 package com.example.walkfromhome;
 
 public class GlobalVariable {
+    public static String firstName;
+    public static String lastName;
+    public static Integer exhaustion;
+    public static Double heartRate;
+    public static Double bloodOxygen;
+    public static Double bloodPress;
     public static String gender;
     public static int step;
     public static double height;
     public static double weight;
-    public static String stride_length = "normal_stride",walking_information = "normal_walk";
+    public static String stride_length = "normal_stride", walking_information = "normal_walk";
     public static int walk_id;
     public static double walking_distance = 0;
     public static boolean login_check = false;

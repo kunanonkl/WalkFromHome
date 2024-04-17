@@ -1,9 +1,11 @@
 package com.example.walkfromhome;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -15,11 +17,17 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.time.LocalDate;
+
+@RequiresApi(api = Build.VERSION_CODES.O)
 public class final_page_general_user extends AppCompatActivity {
     private Button return_butt;
     private FirebaseDatabase database;
     private DatabaseReference myRef;
     private long maxId = 0;
+    private final String day = String.valueOf(LocalDate.now().getDayOfMonth());
+    private final String month = String.valueOf(LocalDate.now().getMonthValue());
+    private final String year = String.valueOf(LocalDate.now().getYear());
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +65,11 @@ public class final_page_general_user extends AppCompatActivity {
                 testResults.setWalking_information(GlobalVariable.walking_information);
                 testResults.setStride_length(GlobalVariable.stride_length);
                 testResults.setId(maxId + 1);
+                testResults.setHeartRate(GlobalVariable.heartRate);
+                testResults.setBloodOxygen(GlobalVariable.bloodOxygen);
+                testResults.setBloodPress(GlobalVariable.bloodPress);
+                testResults.setExhaustion(GlobalVariable.exhaustion);
+                testResults.setDate(day + "/" + month + "/" + year);
                 myRef.child(String.valueOf(maxId + 1)).setValue(testResults);
 
                 Intent go_first_page = new Intent(getApplicationContext(), login_page.class);

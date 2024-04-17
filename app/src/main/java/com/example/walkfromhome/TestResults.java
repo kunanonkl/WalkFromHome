@@ -1,6 +1,15 @@
 package com.example.walkfromhome;
 
+import java.time.LocalDate;
+import java.util.Date;
+
 public class TestResults {
+    private String firstName;
+    private String lastName;
+    private Integer exhaustion;
+    private Double heartRate;
+    private Double bloodOxygen;
+    private Double bloodPress;
     private String gender;
     private Integer step;
     private Double height;
@@ -9,6 +18,64 @@ public class TestResults {
     private String walking_information;
     private Double walking_distance;
     private Long id;
+    private String date;
+
+
+    public Integer getExhaustion() {
+        return exhaustion;
+    }
+
+    public void setExhaustion(Integer exhaustion) {
+        this.exhaustion = exhaustion;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public Double getHeartRate() {
+        return heartRate;
+    }
+
+    public void setHeartRate(Double heartRate) {
+        this.heartRate = heartRate;
+    }
+
+    public Double getBloodOxygen() {
+        return bloodOxygen;
+    }
+
+    public void setBloodOxygen(Double bloodOxygen) {
+        this.bloodOxygen = bloodOxygen;
+    }
+
+    public Double getBloodPress() {
+        return bloodPress;
+    }
+
+    public void setBloodPress(Double bloodPress) {
+        this.bloodPress = bloodPress;
+    }
 
     public Long getId() {
         return id;

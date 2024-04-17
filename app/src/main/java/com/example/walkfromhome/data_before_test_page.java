@@ -102,11 +102,17 @@ public class data_before_test_page extends AppCompatActivity {
                         num_oxy = Double.parseDouble(oxy_string);
                         num_bloodpress = Double.parseDouble(bloodpress_string);
 
+
                         if ((num_pulse >= 101) || (num_oxy <= 59) || (level >= 5)) {
                             Intent intent_danger = new Intent(getApplicationContext(), danger_page.class);
                             startActivity(intent_danger);
                             finish();
                         } else {
+                            GlobalVariable.heartRate = num_pulse;
+                            GlobalVariable.bloodOxygen = num_oxy;
+                            GlobalVariable.bloodPress = num_bloodpress;
+                            GlobalVariable.exhaustion = level;
+
                             Intent intent_good = new Intent(getApplicationContext(), good_page.class);
                             startActivity(intent_good);
                             finish();
