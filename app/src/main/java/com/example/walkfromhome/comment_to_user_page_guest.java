@@ -56,17 +56,17 @@ public class comment_to_user_page_guest extends AppCompatActivity {
         });
 
         first_page_but = findViewById(R.id.first_page__but);
-        Intent guest_result_page = new Intent(comment_to_user_page_guest.this,show_test_result_guest.class);
+        Intent guest_result_page = new Intent(comment_to_user_page_guest.this, show_test_result_guest.class);
         first_page_but.setOnClickListener(new View.OnClickListener() {
-            Intent next_page = new Intent(comment_to_user_page_guest.this,show_test_result_page.class);
+            Intent next_page = new Intent(comment_to_user_page_guest.this, show_test_result_page.class);
+
             @Override
             public void onClick(View v) {
                 save();
-                if(GlobalVariable.login_check){
+                if (GlobalVariable.login_check) {
                     startActivity(next_page);
                     finish();
-                }
-                else{
+                } else {
                     startActivity(guest_result_page);
                     finish();
                 }
@@ -74,7 +74,8 @@ public class comment_to_user_page_guest extends AppCompatActivity {
         });
 
     }
-    public  void save(){
+
+    public void save() {
         TestResults testResults = new TestResults();
         testResults.setFirstName(GlobalVariable.firstName);
         testResults.setLastName(GlobalVariable.lastName);
@@ -94,7 +95,7 @@ public class comment_to_user_page_guest extends AppCompatActivity {
         myRef.child(String.valueOf(maxId + 1)).setValue(testResults);
     }
 
-    public void alert(String message){
+    public void alert(String message) {
         AlertDialog dlg = new AlertDialog.Builder(this)
                 .setTitle("Alert").setMessage(message)
                 .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
