@@ -19,7 +19,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/unit" />
+        app:layout_constraintTop_toBottomOf="@+id/distance3"
+        app:layout_constraintVertical_bias="0.32999998" />
 
     <ImageView
         android:id="@+id/danger_logo3"
@@ -52,6 +53,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.153" />
 
+
     <TextView
         android:id="@+id/text3"
         android:layout_width="wrap_content"
@@ -64,27 +66,26 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.243"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text"
-        app:layout_constraintVertical_bias="0.050000012" />
-
+        app:layout_constraintVertical_bias="0.19" />
 
     <TextView
         android:id="@+id/unit"
         android:layout_width="219dp"
         android:layout_height="40dp"
+        android:layout_marginStart="8dp"
         android:fontFamily="@font/poppins"
         android:text="เมตร"
         android:textAlignment="center"
         android:textColor="#5B1CA8"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/distance3"
-        app:layout_constraintVertical_bias="0.25" />
+        app:layout_constraintBottom_toBottomOf="@+id/text3"
+        app:layout_constraintStart_toEndOf="@+id/distance3"
+        app:layout_constraintTop_toTopOf="@+id/text3"
+        app:layout_constraintVertical_bias="0.24000001" />
 
     <TextView
         android:id="@+id/check"
@@ -100,7 +101,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/next_button"
-        app:layout_constraintVertical_bias="0.65999997" />
+        app:layout_constraintVertical_bias="0.41000003" />
 
     <TextView
         android:id="@+id/distance3"
@@ -115,10 +116,9 @@
         android:textColor="#FF0000"
         android:textColorHint="#000000"
         android:textSize="60sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text3"
-        app:layout_constraintVertical_bias="0.22000003" />
+        app:layout_constraintBottom_toBottomOf="@+id/text3"
+        app:layout_constraintEnd_toEndOf="@+id/text"
+        app:layout_constraintStart_toStartOf="@+id/text"
+        app:layout_constraintTop_toTopOf="@+id/text3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

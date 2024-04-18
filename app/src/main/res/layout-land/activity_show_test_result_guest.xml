@@ -49,8 +49,8 @@
 
     <ImageView
         android:id="@+id/show_test_ellispe_"
-        android:layout_width="420dp"
-        android:layout_height="119dp"
+        android:layout_width="733dp"
+        android:layout_height="208dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

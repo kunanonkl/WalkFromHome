@@ -22,7 +22,7 @@ public class insert_data_page extends AppCompatActivity implements RadioGroup.On
     Double weight,height;
     private String gender;
     private Button next_button,back_button,calibrate_mode;
-    TextInputEditText insert_weight,insert_height;
+    TextInputEditText insert_firstname,insert_lastname,insert_weight,insert_height;
     private RadioGroup radioGroup;
     private RadioButton selectedRatioBtn;
 
@@ -36,6 +36,8 @@ public class insert_data_page extends AppCompatActivity implements RadioGroup.On
         back_button = findViewById(R.id.insert_data_back_button);
         insert_weight = findViewById(R.id.insert_weight);
         insert_height = findViewById(R.id.insert_height);
+        insert_firstname = findViewById(R.id.insert_firstname);
+        insert_lastname = findViewById(R.id.insert_lastname);
         radioGroup = findViewById(R.id.genderGroup);
         radioGroup.setOnCheckedChangeListener(this);
         calibrate_mode = findViewById(R.id.to_calibrate_button);
@@ -44,17 +46,22 @@ public class insert_data_page extends AppCompatActivity implements RadioGroup.On
             @Override
             public void onClick(View view) {
                 selectedRatioBtn = radioGroup.findViewById(radioGroup.getCheckedRadioButtonId());
+                String get_firstname = insert_firstname.getText().toString();
+                String get_lastname = insert_lastname.getText().toString();
                 String get_weight = insert_weight.getText().toString();
                 String get_height = insert_height.getText().toString();
                 Intent to_stepCounter_app = new Intent(insert_data_page.this, calibrate_stride.class);
-                if((get_weight.isEmpty())|| (get_height.isEmpty())){
+                if((get_weight.isEmpty()) || (get_height.isEmpty()) || (get_firstname.isEmpty()) || (get_lastname.isEmpty())){
                     alert("กรุณากรอกข้อมูลให้ครบถ้วน");
                 }
+                else{
                 try {
                     if ((!get_weight.isEmpty()) && (!get_height.isEmpty())) {
+                        GlobalVariable.firstName = get_firstname;
+                        GlobalVariable.lastName = get_lastname;
                         weight = Double.parseDouble(get_weight);
-                        GlobalVariable.weight = weight;
                         height = Double.parseDouble(get_height);
+                        GlobalVariable.weight = weight;
                         GlobalVariable.height = height;
                         if ((gender == "ชาย")) {
                             GlobalVariable.gender = "male";
@@ -83,6 +90,7 @@ public class insert_data_page extends AppCompatActivity implements RadioGroup.On
                 } catch (NumberFormatException e) {
                     e.printStackTrace();
                     alert("กรุณากรอกข้อมูลให้ถูกต้อง");
+                }
                 }
             }
         });
@@ -92,14 +100,19 @@ public class insert_data_page extends AppCompatActivity implements RadioGroup.On
             public void onClick(View v) {
 
                 selectedRatioBtn = radioGroup.findViewById(radioGroup.getCheckedRadioButtonId());
+                String get_firstname = insert_firstname.getText().toString();
+                String get_lastname = insert_lastname.getText().toString();
                 String get_weight = insert_weight.getText().toString();
                 String get_height = insert_height.getText().toString();
                 Intent to_form_page = new Intent(insert_data_page.this,form_walking_data.class);
-                if((get_weight.isEmpty())|| (get_height.isEmpty())){
+                if((get_weight.isEmpty()) || (get_height.isEmpty()) || (get_firstname.isEmpty()) || (get_lastname.isEmpty())){
                     alert("กรุณากรอกข้อมูลให้ครบถ้วน");
                 }
+                else{
                 try {
                  if ((!get_weight.isEmpty()) && (!get_height.isEmpty())) {
+                        GlobalVariable.firstName = get_firstname;
+                        GlobalVariable.lastName = get_lastname;
                         weight = Double.parseDouble(get_weight);
                         height = Double.parseDouble(get_height);
                         GlobalVariable.weight = weight;
@@ -129,6 +142,7 @@ public class insert_data_page extends AppCompatActivity implements RadioGroup.On
                 } catch (NumberFormatException e) {
                     e.printStackTrace();
                     alert("กรุณากรอกข้อมูลให้ถูกต้อง");
+                }
                 }
             }
         });
