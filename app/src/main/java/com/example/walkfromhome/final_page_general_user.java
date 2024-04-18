@@ -33,7 +33,7 @@ public class final_page_general_user extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_final_page_general_user);
-        database = FirebaseDatabase.getInstance("https://walkfromhome-8a54d-default-rtdb.asia-southeast1.firebasedatabase.app/");
+        database = FirebaseDatabase.getInstance("https://walkfromhome-431de-default-rtdb.asia-southeast1.firebasedatabase.app/");
         myRef = database.getReference().child("Data");
 
         myRef.addValueEventListener(new ValueEventListener() {
