@@ -35,7 +35,7 @@ public class login_data_page extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_data_page);
 
-        back_button = findViewById(R.id.back_button);
+        back_button = findViewById(R.id.insert_data_back_button);
         login_button = findViewById(R.id.login2_button);
         register_click = findViewById(R.id.register_click);
         username_text = findViewById(R.id.login_data_page_text_username);

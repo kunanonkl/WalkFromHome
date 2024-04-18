@@ -51,31 +51,39 @@ public class final_page_general_user extends AppCompatActivity {
             }
         });
 
+        TestResults testResults = getTestResults();
+        myRef.child(String.valueOf(maxId + 1)).setValue(testResults);
+
         return_butt = findViewById(R.id.return_button3);
         return_butt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                TestResults testResults = new TestResults();
-                testResults.setWeight(GlobalVariable.weight);
-                testResults.setHeight(GlobalVariable.height);
-                testResults.setGender(GlobalVariable.gender);
-                testResults.setStep(GlobalVariable.step);
-                testResults.setWalking_distance(GlobalVariable.walking_distance);
-                testResults.setWalking_information(GlobalVariable.walking_information);
-                testResults.setStride_length(GlobalVariable.stride_length);
-                testResults.setId(maxId + 1);
-                testResults.setHeartRate(GlobalVariable.heartRate);
-                testResults.setBloodOxygen(GlobalVariable.bloodOxygen);
-                testResults.setBloodPress(GlobalVariable.bloodPress);
-                testResults.setExhaustion(GlobalVariable.exhaustion);
-                testResults.setDate(day + "/" + month + "/" + year);
-                myRef.child(String.valueOf(maxId + 1)).setValue(testResults);
 
                 Intent go_first_page = new Intent(getApplicationContext(), login_page.class);
                 startActivity(go_first_page);
                 finish();
             }
         });
+    }
+
+    @NonNull
+    private TestResults getTestResults() {
+        TestResults testResults = new TestResults();
+        testResults.setFirstName(GlobalVariable.firstName);
+        testResults.setLastName(GlobalVariable.lastName);
+        testResults.setWeight(GlobalVariable.weight);
+        testResults.setHeight(GlobalVariable.height);
+        testResults.setGender(GlobalVariable.gender);
+        testResults.setStep(GlobalVariable.step);
+        testResults.setWalking_distance(GlobalVariable.walking_distance);
+        testResults.setWalking_information(GlobalVariable.walking_information);
+        testResults.setStride_length(GlobalVariable.stride_length);
+        testResults.setId(maxId + 1);
+        testResults.setHeartRate(GlobalVariable.heartRate);
+        testResults.setBloodOxygen(GlobalVariable.bloodOxygen);
+        testResults.setBloodPress(GlobalVariable.bloodPress);
+        testResults.setExhaustion(GlobalVariable.exhaustion);
+        testResults.setDate(day + "/" + month + "/" + year);
+        return testResults;
     }
 }

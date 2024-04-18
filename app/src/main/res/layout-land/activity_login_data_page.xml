@@ -12,7 +12,7 @@
         android:layout_width="60dp"
         android:layout_height="75dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="#908EF8"
         android:isScrollContainer="false"
         app:cornerRadius="10dp"
@@ -41,10 +41,10 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintHorizontal_bias="0.158"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.252"
+        app:layout_constraintVertical_bias="0.232"
         app:srcCompat="@drawable/third_page_login"
         tools:srcCompat="@drawable/third_page_login" />
 
@@ -52,8 +52,9 @@
         android:id="@+id/login_data_page_username_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        app:layout_constraintStart_toStartOf="@+id/login_data_page_login_text"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="120dp"
+        app:layout_constraintEnd_toEndOf="@+id/login_data_page_login_text"
         app:layout_constraintTop_toBottomOf="@+id/login_data_page_login_text"
         app:srcCompat="@drawable/third_page_username" />
 
@@ -61,7 +62,7 @@
         android:id="@+id/login_data_page_text_username"
         android:layout_width="240dp"
         android:layout_height="40dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="21dp"
         android:background="@drawable/round_edit_text"
         android:drawableLeft="@drawable/third_page_user_pic"
         android:ems="10"
@@ -84,7 +85,7 @@
         android:id="@+id/login_data_page_password_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="@+id/login_data_page_username_text"
         app:layout_constraintTop_toBottomOf="@+id/login_data_page_username_text"
         app:srcCompat="@drawable/third_page_password" />
@@ -93,7 +94,7 @@
         android:id="@+id/login_data_page_password"
         android:layout_width="240dp"
         android:layout_height="40dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="36dp"
         android:background="@drawable/round_edit_text"
         android:drawableLeft="@drawable/third_page_password_pic"
         android:ems="10"
@@ -106,18 +107,20 @@
         app:layout_constraintBottom_toBottomOf="@+id/login_data_page_password_text"
         app:layout_constraintStart_toEndOf="@+id/login_data_page_password_text"
         app:layout_constraintTop_toTopOf="@+id/login_data_page_password_text"
+        app:layout_constraintVertical_bias="0.43"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/login2_button"
         android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="32dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
         android:backgroundTint="#87CA8E"
         android:text="เข้าสู่ระบบ"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/login_data_page_password"
-        app:layout_constraintTop_toBottomOf="@+id/login_data_page_password"
+        app:layout_constraintBottom_toBottomOf="@+id/login_data_page_password"
+        app:layout_constraintStart_toEndOf="@+id/login_data_page_password"
+        app:layout_constraintTop_toTopOf="@+id/login_data_page_password"
         app:strokeColor="#ACC4D6"
         app:strokeWidth="1dp" />
 
@@ -125,7 +128,7 @@
         android:id="@+id/register_click"
         android:layout_width="250dp"
         android:layout_height="30dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="24dp"
         android:text="ลงทะเบียนเพื่อเข้าใช้งาน คลิกที่นี่"
         android:textAlignment="center"
         android:textColor="#7A55E3"
@@ -137,13 +140,12 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="416dp"
-        android:layout_height="102dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="804dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="356dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/third_page_ellipse_1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

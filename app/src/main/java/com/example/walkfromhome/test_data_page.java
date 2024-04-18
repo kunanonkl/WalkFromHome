@@ -41,7 +41,7 @@ public class test_data_page extends AppCompatActivity {
         listView = findViewById(R.id.myListView);
         adapter = new UserAdapter(this,walkDataArrayList);
         listView.setAdapter(adapter);
-        back_but = findViewById(R.id.back_button);
+        back_but = findViewById(R.id.insert_data_back_button);
         back_but.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
