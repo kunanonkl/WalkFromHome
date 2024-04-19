@@ -1,5 +1,6 @@
 package com.example.walkfromhome;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -8,6 +9,7 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.media.MediaPlayer;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -38,6 +40,7 @@ public class main_6mwt_page extends AppCompatActivity implements SensorEventList
 
     private Button finish_test_but;
 
+    @RequiresApi(api = Build.VERSION_CODES.TIRAMISU)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -163,7 +166,7 @@ public class main_6mwt_page extends AppCompatActivity implements SensorEventList
         int seconds = (int) (mTimeLeftInMillis / 1000) % 60;
 
         if ((minutes == 5) && (seconds == 59)){
-            sensorManager.registerListener(main_6mwt_page.this, accel, SensorManager.SENSOR_DELAY_FASTEST);
+            sensorManager.registerListener(main_6mwt_page.this, accel, SensorManager.SENSOR_DELAY_NORMAL);
             player = MediaPlayer.create(this,R.raw.start);
             player.start();
         }
