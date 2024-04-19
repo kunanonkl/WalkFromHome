@@ -62,57 +62,56 @@
         app:srcCompat="@drawable/seconde_page_name"
         tools:srcCompat="@drawable/seconde_page_name" />
 
+<!--    <Button-->
+<!--        android:id="@+id/login_button"-->
+<!--        android:layout_width="210dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:backgroundTint="#87CA8E"-->
+<!--        android:text="LOGIN"-->
+<!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.497"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/second_page_app_name"-->
+<!--        app:layout_constraintVertical_bias="0.16000003"-->
+<!--        app:strokeColor="#ACC4D6"-->
+<!--        app:strokeWidth="2dp"-->
+<!--        tools:ignore="TextContrastCheck" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/register_button"-->
+<!--        android:layout_width="210dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:backgroundTint="#FFFF"-->
+<!--        android:text="REGISTER"-->
+<!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.497"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/login_button"-->
+<!--        app:layout_constraintVertical_bias="0.021"-->
+<!--        app:strokeColor="#ACC4D6"-->
+<!--        app:strokeWidth="2dp" />-->
+
     <Button
-        android:id="@+id/login_button"
+        android:id="@+id/guest_button"
         android:layout_width="210dp"
         android:layout_height="60dp"
         android:backgroundTint="#87CA8E"
-        android:text="LOGIN"
+        android:text="START"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/second_page_app_name"
-        app:layout_constraintVertical_bias="0.16000003"
-        app:strokeColor="#ACC4D6"
-        app:strokeWidth="2dp"
-        tools:ignore="TextContrastCheck" />
-
-    <Button
-        android:id="@+id/register_button"
-        android:layout_width="210dp"
-        android:layout_height="60dp"
-        android:backgroundTint="#FFFF"
-        android:text="REGISTER"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_button"
-        app:layout_constraintVertical_bias="0.021"
-        app:strokeColor="#ACC4D6"
-        app:strokeWidth="2dp" />
-
-    <Button
-        android:id="@+id/guest_button"
-        android:layout_width="210dp"
-        android:layout_height="60dp"
-        android:backgroundTint="#FFFF"
-        android:text="GUEST"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/register_button"
-        app:layout_constraintVertical_bias="0.0"
         app:strokeColor="#ACC4D6"
         app:strokeWidth="2dp" />
 
