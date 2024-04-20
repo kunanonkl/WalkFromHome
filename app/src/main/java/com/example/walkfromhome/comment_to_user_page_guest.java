@@ -18,7 +18,13 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.content.Context;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.time.LocalDate;
 
 @RequiresApi(api = Build.VERSION_CODES.O)
@@ -62,6 +68,11 @@ public class comment_to_user_page_guest extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+                try {
+                    saveJSON();
+                } catch (JSONException | IOException e) {
+                    throw new RuntimeException(e);
+                }
                 save();
                 if (GlobalVariable.login_check) {
                     startActivity(next_page);
@@ -93,6 +104,30 @@ public class comment_to_user_page_guest extends AppCompatActivity {
         testResults.setExhaustion(GlobalVariable.exhaustion);
         testResults.setDate(day + "/" + month + "/" + year);
         myRef.child(String.valueOf(maxId + 1)).setValue(testResults);
+    }
+
+    public void saveJSON() throws JSONException, IOException {
+        JSONObject obj = new JSONObject() ;
+        obj.put("firstName" , GlobalVariable.firstName);
+        obj.put("lastName" , GlobalVariable.lastName);
+        obj.put("weight", GlobalVariable.weight);
+        obj.put("height", GlobalVariable.height);
+        obj.put("gender", GlobalVariable.gender);
+        obj.put("speed", GlobalVariable.walking_information);
+        obj.put("stride", GlobalVariable.stride_length);
+
+        writeJSONToFile(getApplicationContext(), obj, "data.json");
+    }
+
+    public void writeJSONToFile(Context context, JSONObject jsonObject, String fileName) {
+        try {
+            FileOutputStream fos = context.openFileOutput(fileName, Context.MODE_PRIVATE);
+            fos.write(jsonObject.toString().getBytes());
+            fos.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+            alert("error2");
+        }
     }
 
     public void alert(String message) {

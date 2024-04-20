@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,6 +16,15 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class insert_data_page extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener{
 
@@ -41,6 +51,38 @@ public class insert_data_page extends AppCompatActivity implements RadioGroup.On
         radioGroup = findViewById(R.id.genderGroup);
         radioGroup.setOnCheckedChangeListener(this);
         calibrate_mode = findViewById(R.id.to_calibrate_button);
+
+        JSONObject dataRead = readJSONFromFile(getApplicationContext(), "data.json");
+        if(dataRead != null){
+            try {
+                String firstName = dataRead.getString("firstName");
+                String lastName = dataRead.getString("lastName");
+                String weight = dataRead.getString("weight");
+                String height = dataRead.getString("height");
+                String gender = dataRead.getString("gender");
+                if(!firstName.isEmpty()){
+                    insert_firstname.setText(dataRead.getString("firstName"));
+                }
+                if(!lastName.isEmpty()){
+                    insert_lastname.setText(dataRead.getString("lastName"));
+                }
+                if(!weight.isEmpty()){
+                    insert_weight.setText(dataRead.getString("weight"));
+                }
+                if(!height.isEmpty()){
+                    insert_height.setText(dataRead.getString("height"));
+                }
+
+                if(gender.equals("male")) {
+                    radioGroup.check(R.id.male_ratio);
+                }
+                else {
+                    radioGroup.check(R.id.female_ratio);
+                }
+            } catch (JSONException e) {
+                throw new RuntimeException(e);
+            }
+        }
 
         calibrate_mode.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -199,6 +241,28 @@ public class insert_data_page extends AppCompatActivity implements RadioGroup.On
             case R.id.female_ratio:
                 gender = "หญิง";
                 break;
+        }
+    }
+
+    public JSONObject readJSONFromFile(Context context, String fileName) {
+        StringBuilder stringBuilder = new StringBuilder();
+        try {
+            FileInputStream fis = context.openFileInput(fileName);
+            InputStreamReader isr = new InputStreamReader(fis);
+            BufferedReader bufferedReader = new BufferedReader(isr);
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                stringBuilder.append(line).append('\n');
+            }
+            fis.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            return new JSONObject(stringBuilder.toString());
+        } catch (JSONException e) {
+            e.printStackTrace();
+            return null;
         }
     }
 }

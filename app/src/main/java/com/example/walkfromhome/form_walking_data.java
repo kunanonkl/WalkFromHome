@@ -1,6 +1,7 @@
 package com.example.walkfromhome;
 
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +12,14 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class form_walking_data extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener{
 
@@ -35,6 +44,29 @@ public class form_walking_data extends AppCompatActivity implements RadioGroup.O
         radioGroup3 = findViewById(R.id.strideGroup);
         radioGroup3.setOnCheckedChangeListener(this);
         Intent walking_method = new Intent(form_walking_data.this,main_6mwt_page.class);
+
+        JSONObject dataRead = readJSONFromFile(getApplicationContext(), "data.json");
+        if(dataRead != null){
+            try {
+                String speed = dataRead.getString("speed");
+                String stride = dataRead.getString("stride");
+
+                switch (stride) {
+                    case  "short_stride": radioGroup3.check(R.id.short_stride); break;
+                    case  "normal_stride": radioGroup3.check(R.id.normal_stride); break;
+                    case  "long_stride": radioGroup3.check(R.id.long_stride); break;
+                }
+
+                switch (speed) {
+                    case  "slow_walk": radioGrop2.check(R.id.slow); break;
+                    case  "normal_walk": radioGrop2.check(R.id.normal_walk); break;
+                    case  "fast_walk": radioGrop2.check(R.id.fast); break;
+                }
+
+            } catch (JSONException e) {
+                throw new RuntimeException(e);
+            }
+        }
 
         next_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -113,5 +145,25 @@ public class form_walking_data extends AppCompatActivity implements RadioGroup.O
         }
 
     }
-
+    public JSONObject readJSONFromFile(Context context, String fileName) {
+        StringBuilder stringBuilder = new StringBuilder();
+        try {
+            FileInputStream fis = context.openFileInput(fileName);
+            InputStreamReader isr = new InputStreamReader(fis);
+            BufferedReader bufferedReader = new BufferedReader(isr);
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                stringBuilder.append(line).append('\n');
+            }
+            fis.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            return new JSONObject(stringBuilder.toString());
+        } catch (JSONException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
 }

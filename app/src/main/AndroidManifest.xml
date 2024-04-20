@@ -37,6 +37,7 @@
             android:exported="false" />
         <activity
             android:name=".main_6mwt_page"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".insert_data_page"

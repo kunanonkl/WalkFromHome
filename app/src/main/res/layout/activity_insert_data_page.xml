@@ -56,16 +56,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.115"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/insert_weight"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="@+id/insert_weight"
         app:layout_constraintTop_toBottomOf="@+id/insert_lastname"
         app:layout_constraintVertical_bias="0.060000002"
         app:srcCompat="@drawable/elevenpage_4" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/insert_weight"
-        android:layout_width="205dp"
+        android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/insert_data_box"
@@ -73,15 +73,14 @@
         android:hint=" กรุณากรอกน้ำหนัก"
         android:textAlignment="center"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/insert_data_text2"
-        app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintStart_toStartOf="@+id/insert_data_text2"
+        app:layout_constraintEnd_toEndOf="@+id/insert_lastname"
+        app:layout_constraintStart_toStartOf="@+id/insert_lastname"
         app:layout_constraintTop_toBottomOf="@+id/insert_data_text2"
         tools:ignore="TouchTargetSizeCheck" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/insert_height"
-        android:layout_width="205dp"
+        android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/insert_data_box"
@@ -89,9 +88,9 @@
         android:hint=" กรุณากรอกส่วนสูง"
         android:textAlignment="center"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/insert_weight"
         app:layout_constraintHorizontal_bias="0.126"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/insert_weight"
         app:layout_constraintTop_toBottomOf="@+id/insert_data_text3"
         tools:ignore="TouchTargetSizeCheck" />
 
@@ -100,7 +99,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/insert_data_text2"
+        app:layout_constraintEnd_toEndOf="@+id/insert_height"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="@+id/insert_height"
         app:layout_constraintTop_toBottomOf="@+id/insert_weight"
         app:layout_constraintVertical_bias="0.06999999"
         app:srcCompat="@drawable/elevenpage_6" />
@@ -228,36 +229,39 @@
         android:textStyle="bold"
         android:typeface="normal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.11"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/insert_firstname"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="@+id/insert_firstname"
         app:layout_constraintTop_toBottomOf="@+id/insert_data_text"
         app:layout_constraintVertical_bias="0.04000002" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/insert_firstname"
-        android:layout_width="205dp"
+        android:layout_width="0dp"
         android:layout_height="40dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="100dp"
         android:background="@drawable/insert_data_box"
         android:fontFamily="@font/poppins"
         android:hint="ชื่อ"
         android:textAlignment="center"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView13"
-        app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/insert_lastname"
-        android:layout_width="205dp"
+        android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/insert_data_box"
         android:fontFamily="@font/poppins"
         android:hint="นามสกุล"
         android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/insert_firstname"
         app:layout_constraintStart_toStartOf="@+id/insert_firstname"
         app:layout_constraintTop_toBottomOf="@+id/insert_firstname" />
 
