@@ -35,11 +35,12 @@
         android:id="@+id/imageView18"
         android:layout_width="352dp"
         android:layout_height="154dp"
-        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView14"
+        app:layout_constraintVertical_bias="0.06999999"
         app:srcCompat="@drawable/green_rec" />
 
     <ImageView
@@ -56,17 +57,17 @@
         android:id="@+id/next_button"
         android:layout_width="wrap_content"
         android:layout_height="49dp"
-        android:layout_marginTop="108dp"
         android:backgroundTint="#FFFF"
         android:fontFamily="@font/poppins"
         android:text="ถัดไป"
         android:textColor="#151414"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/back_button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.731"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView18"
+        app:layout_constraintTop_toTopOf="@+id/back_button2"
         app:strokeColor="#908EF8"
         app:strokeWidth="2dp" />
 
@@ -74,17 +75,18 @@
         android:id="@+id/back_button2"
         android:layout_width="wrap_content"
         android:layout_height="49dp"
-        android:layout_marginTop="108dp"
         android:backgroundTint="#FFFF"
         android:fontFamily="@font/poppins"
         android:text="ย้อนกลับ"
         android:textColor="#151414"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView18"
+        app:layout_constraintVertical_bias="0.45"
         app:strokeColor="#908EF8"
         app:strokeWidth="2dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
