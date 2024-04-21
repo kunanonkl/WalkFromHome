@@ -166,7 +166,7 @@ public class main_6mwt_page extends AppCompatActivity implements SensorEventList
         int seconds = (int) (mTimeLeftInMillis / 1000) % 60;
 
         if ((minutes == 5) && (seconds == 59)){
-            sensorManager.registerListener(main_6mwt_page.this, accel, SensorManager.SENSOR_DELAY_NORMAL);
+            sensorManager.registerListener(main_6mwt_page.this, accel, SensorManager.SENSOR_DELAY_NORMAL,SensorManager.SENSOR_DELAY_NORMAL);
             player = MediaPlayer.create(this,R.raw.start);
             player.start();
         }

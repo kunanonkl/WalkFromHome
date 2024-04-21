@@ -107,7 +107,7 @@ public class comment_to_user_page_guest extends AppCompatActivity {
     }
 
     public void saveJSON() throws JSONException, IOException {
-        JSONObject obj = new JSONObject() ;
+        JSONObject obj = new JSONObject();
         obj.put("firstName" , GlobalVariable.firstName);
         obj.put("lastName" , GlobalVariable.lastName);
         obj.put("weight", GlobalVariable.weight);
